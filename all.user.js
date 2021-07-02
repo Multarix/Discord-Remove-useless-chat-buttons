@@ -2,7 +2,7 @@
 // @name        Discord Hide Useless Chat Buttons
 // @namespace   https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @match       https://discord.com/*
-// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Remove-useless-chat-buttons/master/script-keepGif.userscript.js
+// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Remove-useless-chat-buttons/master/all.user.js
 // @homepageURL https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @supportURL  https://github.com/Multarix/Discord-Remove-useless-chat-buttons/issues
 // @grant       none
@@ -12,6 +12,11 @@
 // ==/UserScript==
 
 function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons in one simple script
+	const hideGifs = document.querySelectorAll('[aria-label="Open GIF picker"]'); // Find the "Gif" button
+	hideGifs.forEach(gifButton => {
+		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the button if it's not already hidden.
+	});
+
 	const hideStickers = document.querySelectorAll('[aria-label="Open sticker picker"]'); // Find the "Sticker" button
 	hideStickers.forEach(gifButton => {
 		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the button if it's not already hidden.
