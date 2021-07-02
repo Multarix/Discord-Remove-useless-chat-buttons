@@ -18,31 +18,46 @@ If you are unsure about the legitmacy of this script. Stop and don't continue. I
 Copy and paste the script into the console and hit enter.<br>
 
 ### Some last minute warnings
-This may potentially hide other objects related to these things in the future if discord changes anything, so as stated above, if you happen to be using this far into the future, it may not work as expected.
+- This may potentially hide other objects related to these things in the future if discord changes anything, so as stated above, if you happen to be using this far into the future, it may not work as expected.
+- Trying to use both versions of the script at the same time will probably cause problems, don't try it.
 
 ## Userscripts
 In the event you're a weirdo and use the web based version of discord rather than the app...
 - Remove All: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-all.userscript.js
 - Keep GIF: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-keepGif.userscript.js
-
+<br>
+#### Quick Access: All Version
 ```js
 function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons in one simple script
-	// Hide Gif Button
 	const hideGifs = document.querySelectorAll('[aria-label="Open GIF picker"]'); // Find the "Gif" button
 	hideGifs.forEach(gifButton => {
-		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the message if it's not already hidden.
+		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the button if it's not already hidden.
 	});
 
-	// Hide Sticker Button
 	const hideStickers = document.querySelectorAll('[aria-label="Open sticker picker"]'); // Find the "Sticker" button
 	hideStickers.forEach(gifButton => {
-		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the message if it's not already hidden.
+		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the button if it's not already hidden.
 	});
 
-// Hide gift nitro button
 	const hideNitro = document.querySelectorAll('[aria-label="Send a gift"]'); // Find the "Gift Nitro" button
 	hideNitro.forEach(nitroButton => {
-		if(nitroButton.style.display !== "none") nitroButton.style.display = "none"; // Hide the message if it's not already hidden.
+		if(nitroButton.style.display !== "none") nitroButton.style.display = "none"; // Hide the button if it's not already hidden.
+	});
+}
+setInterval(removeAnnoyingButtons, 2000) // Repeat every 2 seconds. Recommended to keep at 2000, but raise/ lower if you wish.
+```
+<br>
+#### Quick Access: Keep GIF Version
+```js
+function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons in one simple script
+	const hideStickers = document.querySelectorAll('[aria-label="Open sticker picker"]'); // Find the "Sticker" button
+	hideStickers.forEach(gifButton => {
+		if(gifButton.style.display !== "none") gifButton.style.display = "none"; // Hide the button if it's not already hidden.
+	});
+
+	const hideNitro = document.querySelectorAll('[aria-label="Send a gift"]'); // Find the "Gift Nitro" button
+	hideNitro.forEach(nitroButton => {
+		if(nitroButton.style.display !== "none") nitroButton.style.display = "none"; // Hide the button if it's not already hidden.
 	});
 }
 setInterval(removeAnnoyingButtons, 2000) // Repeat every 2 seconds. Recommended to keep at 2000, but raise/ lower if you wish.
