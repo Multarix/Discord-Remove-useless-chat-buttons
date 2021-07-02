@@ -2,7 +2,7 @@
 // @name        Discord Hide Useless Chat Buttons
 // @namespace   https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @match       https://discord.com/*
-// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Remove-useless-chat-buttons/master/script.user.js
+// @downloadURL https://raw.githubusercontent.com/Multarix/Discord-Remove-useless-chat-buttons/master/script-all.userscript.js
 // @homepageURL https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @supportURL  https://github.com/Multarix/Discord-Remove-useless-chat-buttons/issues
 // @grant       none
