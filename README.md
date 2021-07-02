@@ -25,8 +25,9 @@ Copy and paste the script into the console and hit enter.<br>
 In the event you're a weirdo and use the web based version of discord rather than the app...
 - Remove All: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-all.userscript.js
 - Keep GIF: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-keepGif.userscript.js
-<br>
+
 #### Quick Access: All Version
+
 ```js
 function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons in one simple script
 	const hideGifs = document.querySelectorAll('[aria-label="Open GIF picker"]'); // Find the "Gif" button
@@ -46,8 +47,9 @@ function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons 
 }
 setInterval(removeAnnoyingButtons, 2000) // Repeat every 2 seconds. Recommended to keep at 2000, but raise/ lower if you wish.
 ```
-<br>
+
 #### Quick Access: Keep GIF Version
+
 ```js
 function removeAnnoyingButtons(){ // Remove Gif, Sticker and Gift Nitro buttons in one simple script
 	const hideStickers = document.querySelectorAll('[aria-label="Open sticker picker"]'); // Find the "Sticker" button
