@@ -26,8 +26,8 @@ Copy and paste the script into the console and hit enter.<br>
 
 ## Userscripts
 In the event you're a weirdo and use the web based version of discord rather than the app...
-- Remove All: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-all.userscript.js
-- Keep GIF: https://github.com/Multarix/Discord-Hide-Blocked-Messages/raw/master/script-keepGif.userscript.js
+- Remove All: https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/all.user.js
+- Keep GIF: https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/keepGif.user.js
 
 #### Quick Access: All Version
 
