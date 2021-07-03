@@ -14,8 +14,7 @@ There are 2 versions of the scripts here:<br>
 #### _**I hold no responsibility for you breaking your discord or other things happening**_
 
 <br>
-To use these, while discord is open, press <i>Ctrl + Shift + I</i>. You will be presented with a console. First and foremost you'll be greeted with a giant message telling you that pasting anything inside the console has a high chance of being a scam. The real reason they tell you this, is to discourge exactly what this script does, removing nitro bloat. It's of course your choice who you trust,
-
+To use these, while discord is open, press <i>Ctrl + Shift + I</i>. You will be presented with a console. First and foremost you'll be greeted with a giant message telling you that pasting anything inside the console has a high chance of being a scam. The reason they tell you this, is due to potential security/ account stealing problems, as well as potentially doing exactly what this script aimed to do: Removing nitro bloat. If unsure, get someone else to check the code before using it.
 Copy and paste the script into the console and hit enter.<br>
 
 ### Some last minute warnings
@@ -23,9 +22,9 @@ Copy and paste the script into the console and hit enter.<br>
 - Trying to use both versions of the script at the same time will probably cause problems, don't try it.
 
 ## Userscripts
-In the event you use the web based version of discord rather than the app, tampermonkey versions are avaliable too...
-- Remove All: https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/all.user.js
-- Keep GIF: https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/keepGif.user.js
+In the event you use the web based version of discord rather than the app, tampermonkey versions are avaliable too:
+- Remove All - https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/all.user.js
+- Keep GIF - https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/keepGif.user.js
 
 #### Quick Access: All Version
 
