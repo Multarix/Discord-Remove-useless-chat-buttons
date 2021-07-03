@@ -3,14 +3,16 @@ Remove the gift nitro, gif and sticker buttons from the chat bar in discord!
 
 This repository is for those looking to hide the "Gift Nitro", "Stickers" and "GIF" buttons from the chat bar in discord. If reading this far into the future, please note that this may not work.<br>
 
-_**Note:** The script will start working after you have changed channel at least once._
+#### Note:
+- The script will start working after you have changed channel at least once.
+- In some situations, you may notice the buttons return. This generally happens when you switch to a channel that has the same name as the previous channel. Swapping to a differently named channel and back fixes the issue.
 
 There are 2 versions of the scripts here:<br>
 1. "All" versions remove the Gift Nitro, Stickers and GIF buttons, (Note that you can still access gifs and stickers via the tabs in the emoji button that remains)
 2. "KeepGIF" versions remove the Gift Nitro and Sticker buttons only (Note that you can still access the stickers via the tab in the emoji/ gif buttons that remain)
 
 
-###  **The script will need to re-pasted in every time you start discord. If something goes wrong, restarting discord should fix it.**
+###  **The script will need to be re-pasted in every time you start discord. If something goes wrong, restarting discord should fix it.**
 #### _**I hold no responsibility for you breaking your discord or other things happening**_
 
 <br>
