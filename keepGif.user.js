@@ -6,9 +6,9 @@
 // @homepageURL https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @supportURL  https://github.com/Multarix/Discord-Remove-useless-chat-buttons/issues
 // @grant       none
-// @version     1.0
-// @author      Anonymous
-// @description 10/28/2020, 1:37:40 PM
+// @version     1.1
+// @author      Multarix
+// @description Working as of: 3/07/2021
 // ==/UserScript==
 
 new MutationObserver(() => {
