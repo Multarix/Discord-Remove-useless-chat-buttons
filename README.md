@@ -24,7 +24,7 @@ Copy and paste the script into the console and hit enter.<br>
 - Trying to use both versions of the script at the same time will probably cause problems, don't try it.
 
 ## Userscripts
-In the event you use the web based version of discord rather than the app, tampermonkey versions are avaliable too:
+In the event you use the web based version of discord rather than the app, Tampermonkey versions are available too:
 - Remove All - https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/all.user.js
 - Keep GIF - https://github.com/Multarix/Discord-Remove-useless-chat-buttons/raw/main/keepGif.user.js
 
