@@ -6,15 +6,13 @@
 // @homepageURL https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @supportURL  https://github.com/Multarix/Discord-Remove-useless-chat-buttons/issues
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      Multarix
-// @description Working as of: 3/07/2021
+// @description Working as of: 4/07/2021
 // ==/UserScript==
 
-new MutationObserver(() => {
-	const buttonsToHide = ["Open sticker picker", "Send a gift"] // Array of labels for buttons we want to remove
-	for(button of buttonsToHide){ // Loop through the array
-		const foundButton = document.querySelector(`[aria-label="${button}"]`); // Find the button
-		if(foundButton) foundButton.remove() // If the button was found, remove it
-	}
-}).observe(document.querySelector('title'), {childList: true}); // Whenever the "channel" changes, run the script
+const buttonsToHide = ["Open sticker picker", "Send a gift"];
+let css = "";
+buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
+const style = document.createElement('style'); style.innerHTML = css;
+document.head.appendChild(style);

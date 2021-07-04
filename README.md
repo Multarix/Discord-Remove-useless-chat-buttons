@@ -3,10 +3,6 @@ Remove the gift nitro, gif and sticker buttons from the chat bar in discord!
 
 This repository is for those looking to hide the "Gift Nitro", "Stickers" and "GIF" buttons from the chat bar in discord. If reading this far into the future, please note that this may not work.<br>
 
-#### Note:
-- The script will start working after you have changed channel at least once.
-- In some situations, you may notice the buttons return. This generally happens when you switch to a channel that has the same name as the previous channel. Swapping to a differently named channel and back fixes the issue.
-
 There are 2 versions of the scripts here:<br>
 1. "All" versions remove the Gift Nitro, Stickers and GIF buttons, (Note that you can still access gifs and stickers via the tabs in the emoji button that remains)
 2. "KeepGIF" versions remove the Gift Nitro and Sticker buttons only (Note that you can still access the stickers via the tab in the emoji/ gif buttons that remain)
@@ -31,23 +27,19 @@ In the event you use the web based version of discord rather than the app, Tampe
 #### Quick Access: All Version
 
 ```js
-new MutationObserver(() => {
-	const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift"] // Array of labels for buttons we want to remove
-	for(button of buttonsToHide){ // Loop through the array
-		const foundButton = document.querySelector(`[aria-label="${button}"]`); // Find the button
-		if(foundButton) foundButton.remove() // If the button was found, remove it
-	}
-}).observe(document.querySelector('title'), {childList: true}); // Whenever the "channel" changes, run the script
+const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift"];
+let css = "";
+buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
+const style = document.createElement('style'); style.innerHTML = css;
+document.head.appendChild(style);
 ```
 
 #### Quick Access: Keep GIF Version
 
 ```js
-new MutationObserver(() => {
-	const buttonsToHide = ["Open sticker picker", "Send a gift"] // Array of labels for buttons we want to remove
-	for(button of buttonsToHide){ // Loop through the array
-		const foundButton = document.querySelector(`[aria-label="${button}"]`); // Find the button
-		if(foundButton) foundButton.remove() // If the button was found, remove it
-	}
-}).observe(document.querySelector('title'), {childList: true}); // Whenever the "channel" changes, run the script
+const buttonsToHide = ["Open sticker picker", "Send a gift"];
+let css = "";
+buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
+const style = document.createElement('style'); style.innerHTML = css;
+document.head.appendChild(style);
 ```
