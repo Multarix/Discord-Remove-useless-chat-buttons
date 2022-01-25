@@ -1,6 +1,11 @@
 # Discord: Remove useless chat buttons
 Remove the gift nitro, gif and sticker buttons from the chat bar in discord!
 
+## IMPORTANT INFO - 26/01/2022
+Discord seems to have disabled accessing the developer console within the production version. This may be a bug, or it may be permanant, if you're unable to open the console (ctrl + shift + i), there is a minor work around: Install Discord Canary. Canary is the beta branch of discord and generally contains features that are not fully released yet. You can download canary here: https://canary.discord.com/
+
+
+## What is this for?
 This repository is for those looking to hide the "Gift Nitro", "Stickers" and "GIF" buttons from the chat bar in discord. If reading this far into the future, please note that this may not work.<br>
 
 There are 2 versions of the scripts here:<br>
