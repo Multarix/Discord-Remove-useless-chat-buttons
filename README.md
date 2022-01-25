@@ -2,7 +2,10 @@
 Remove the gift nitro, gif and sticker buttons from the chat bar in discord!
 
 ## IMPORTANT INFO - 26/01/2022
-Discord seems to have disabled accessing the developer console within the production version. This may be a bug, or it may be permanant, if you're unable to open the console (ctrl + shift + i), there is a minor work around: Install Discord Canary. Canary is the beta branch of discord and generally contains features that are not fully released yet. You can download canary here: https://canary.discord.com/
+Discord seems to have disabled accessing the developer console within the production version.<br>
+There are currently 2 work arounds:<br>
+1. Install and use Discord Canary. You can download canary here: https://canary.discord.com/<br>
+2. Re-Enable it in discord settings (Reccomended). You can do this by going to `%appdata%/discord/settings.json` and adding the following line to the bottom:<br> `"DANGEROUS_ENABLE_DEVTOOLS_ONLY_ENABLE_IF_YOU_KNOW_WHAT_YOURE_DOING": true` (Remember to add a comma on the previous line)
 
 
 ## What is this for?
