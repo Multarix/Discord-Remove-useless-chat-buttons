@@ -6,12 +6,12 @@
 // @homepageURL https://github.com/Multarix/Discord-Remove-useless-chat-buttons
 // @supportURL  https://github.com/Multarix/Discord-Remove-useless-chat-buttons/issues
 // @grant       none
-// @version     1.2
+// @version     1.3
 // @author      Multarix
 // @description Working as of: 4/07/2021
 // ==/UserScript==
 
-const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift"];
+const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
 const style = document.createElement('style'); style.innerHTML = css;

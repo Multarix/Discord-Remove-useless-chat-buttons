@@ -35,7 +35,7 @@ In the event you use the web based version of discord rather than the app, Tampe
 #### Quick Access: All Version
 
 ```js
-const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift"];
+const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
 const style = document.createElement('style'); style.innerHTML = css;
@@ -45,18 +45,18 @@ document.head.appendChild(style);
 #### Quick Access: Keep GIF Version
 
 ```js
-const buttonsToHide = ["Open sticker picker", "Send a gift"];
+const buttonsToHide = ["Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
 const style = document.createElement('style'); style.innerHTML = css;
 document.head.appendChild(style);
 ```
 
-#### Expertimental: Remove threads
+#### Experimental: Remove threads
 Removes the "Create thread" from the upload panel, as well as the new thread icon at the top of the ui.
 
 ```js
-const buttonsToHide = ["Open sticker picker", "Send a gift"];
+const buttonsToHide = ["Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
 css = css.concat('[id="channel-attach-THREAD"]{display:none}');
