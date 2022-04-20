@@ -9,7 +9,7 @@ There are currently 2 work arounds:<br>
 
 
 ## What is this for?
-This repository is for those looking to hide the "Gift Nitro", "Stickers" and "GIF" buttons from the chat bar in discord. If reading this far into the future, please note that this may not work.<br>
+This repository is for those looking to hide the "Gift Nitro", "Boost this server", "Stickers" or "GIF" buttons from the chat bar in discord. If reading this far into the future, please note that this may not work.<br>
 
 There are 2 versions of the scripts here:<br>
 1. "All" versions remove the Gift Nitro, Stickers and GIF buttons, (Note that you can still access gifs and stickers via the tabs in the emoji button that remains)
@@ -38,6 +38,7 @@ In the event you use the web based version of discord rather than the app, Tampe
 const buttonsToHide = ["Open GIF picker", "Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
+css = css.concat('[id="channel-attach-THREAD"]{display:none}');
 const style = document.createElement('style'); style.innerHTML = css;
 document.head.appendChild(style);
 ```
@@ -48,6 +49,7 @@ document.head.appendChild(style);
 const buttonsToHide = ["Open sticker picker", "Send a gift", "Boost this server"];
 let css = "";
 buttonsToHide.forEach(button => css = css.concat(`[aria-label="${button}"]{display:none}`));
+css = css.concat('[id="channel-attach-THREAD"]{display:none}');
 const style = document.createElement('style'); style.innerHTML = css;
 document.head.appendChild(style);
 ```
